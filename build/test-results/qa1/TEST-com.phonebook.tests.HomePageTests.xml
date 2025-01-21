@@ -1,19 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.phonebook.tests.HomePageTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-27T08:37:47" hostname="DESKTOP-IDPAKS2" time="0.035">
+<testsuite name="com.phonebook.tests.HomePageTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-01-21T15:01:05" hostname="DESKTOP-IDPAKS2" time="10.069">
   <properties/>
-  <testcase name="isHomeComponentPresentTest" classname="com.phonebook.tests.HomePageTests" time="0.035"/>
-  <system-out><![CDATA[09:37:47.850 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test isHomeComponentPresentTest[]
-09:37:47.853 [Test worker] INFO  com.phonebook.utils.MyListener -- Before fine elements By.cssSelector: div:nth-child(2)>div>div>h1
-09:37:47.854 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
-09:37:47.885 [Test worker] INFO  com.phonebook.utils.MyListener -- List size is 1
-09:37:47.886 [Test worker] INFO  com.phonebook.utils.MyListener -- ************************************************************
-09:37:47.889 [Test worker] INFO  com.phonebook.utils.MyListener -- Before fine elements By.cssSelector: div:nth-child(2)>div>div>h1
-09:37:47.890 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
-09:37:47.918 [Test worker] INFO  com.phonebook.utils.MyListener -- List size is 1
-09:37:47.918 [Test worker] INFO  com.phonebook.utils.MyListener -- ************************************************************
-09:37:47.923 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: isHomeComponentPresentTest
-09:37:47.924 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
-09:37:47.924 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================================================
+  <testcase name="isHomeComponentPresentTest" classname="com.phonebook.tests.HomePageTests" time="10.069">
+    <failure message="java.lang.AssertionError: expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.phonebook.tests.HomePageTests.isHomeComponentPresentTest(HomePageTests.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:145)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:92)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[16:00:55.483 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test isHomeComponentPresentTest[]
+16:00:55.617 [Test worker] INFO  com.phonebook.utils.MyListener -- Before fine elements By.cssSelector: div:nth-child(2)>div>div>h7
+16:00:55.618 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
+16:01:05.662 [Test worker] INFO  com.phonebook.utils.MyListener -- List size is 0
+16:01:05.663 [Test worker] INFO  com.phonebook.utils.MyListener -- ************************************************************
+16:01:05.664 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will find By.cssSelector: [href='/home']
+16:01:05.664 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************
+16:01:05.699 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator found By.cssSelector: [href='/home']
+16:01:05.700 [Test worker] INFO  com.phonebook.utils.MyListener -- ******************************************
+16:01:05.846 [Test worker] INFO  com.phonebook.utils.MyListener -- Before fine elements By.cssSelector: div:nth-child(2)>div>div>h7
+16:01:05.847 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
+16:01:15.859 [Test worker] INFO  com.phonebook.utils.MyListener -- List size is 0
+16:01:15.859 [Test worker] INFO  com.phonebook.utils.MyListener -- ************************************************************
+16:01:16.171 [Test worker] ERROR com.phonebook.tests.TestBase -- FAILED: isHomeComponentPresentTest Screenshot path: C:\QA\QA49_PhonebookUI\screenshots\sreen-1737471676146.png
+16:01:16.171 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+16:01:16.171 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================================================
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

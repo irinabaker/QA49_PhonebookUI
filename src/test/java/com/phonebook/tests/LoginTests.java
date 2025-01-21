@@ -35,4 +35,20 @@ public class LoginTests extends TestBase{
         Assert.assertTrue(app.getUser().isAlertDisplayed());
     }
 
+    @Test
+    public void loginPositiveTestWithScreenCast() {
+        app.getUser().deleteFile("records");
+
+        app.getUser().startRecording();
+
+        app.getUser().clickOnLoginLink();
+        app.getUser().fillRegisterLoginFormForRecord(new User()
+                .setEmail(UserData.EMAIL)
+                .setPassword(UserData.PASSWORD));
+        app.getUser().clickOnLoginButton();
+        Assert.assertTrue(app.getUser().isSignOutButtonPresent());
+        app.getUser().pause(2000);
+        app.getUser().stopRecording();
+    }
+
 }
