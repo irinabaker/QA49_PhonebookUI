@@ -20,4 +20,10 @@ public class HomePageTests extends TestBase{
         Assert.assertTrue(app.getHome().isHomeComponentPresent());
     }
 
+    @Test
+    public void colorOfElementTest() {
+        Assert.assertEquals(app.getHome().verifyColor(),"rgba(143, 188, 143, 1)");
+       // app.getHome().verifyColor();
+    }
+
 }

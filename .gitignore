@@ -9,8 +9,8 @@
 out/
 /gradle/
 settings.gradle
-\gradlew
-gradlew/
-gradlew.bat
+#\gradlew
+#gradlew/
+#gradlew.bat
 *.log
 *.png

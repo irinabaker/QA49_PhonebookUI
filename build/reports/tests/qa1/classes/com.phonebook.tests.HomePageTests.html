@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">10.069s</div>
+<div class="counter">0.146s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,78 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="isHomeComponentPresentTest"></a>
-<h3 class="failures">isHomeComponentPresentTest</h3>
-<span class="code">
-<pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.phonebook.tests.HomePageTests.isHomeComponentPresentTest(HomePageTests.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:145)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:92)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -143,31 +78,27 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">isHomeComponentPresentTest</td>
-<td class="failures">10.069s</td>
-<td class="failures">failed</td>
+<td class="success">isHomeComponentPresentTest</td>
+<td class="success">0.146s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>16:00:55.483 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test isHomeComponentPresentTest[]
-16:00:55.617 [Test worker] INFO  com.phonebook.utils.MyListener -- Before fine elements By.cssSelector: div:nth-child(2)&gt;div&gt;div&gt;h7
-16:00:55.618 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
-16:01:05.662 [Test worker] INFO  com.phonebook.utils.MyListener -- List size is 0
-16:01:05.663 [Test worker] INFO  com.phonebook.utils.MyListener -- ************************************************************
-16:01:05.664 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will find By.cssSelector: [href='/home']
-16:01:05.664 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************
-16:01:05.699 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator found By.cssSelector: [href='/home']
-16:01:05.700 [Test worker] INFO  com.phonebook.utils.MyListener -- ******************************************
-16:01:05.846 [Test worker] INFO  com.phonebook.utils.MyListener -- Before fine elements By.cssSelector: div:nth-child(2)&gt;div&gt;div&gt;h7
-16:01:05.847 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
-16:01:15.859 [Test worker] INFO  com.phonebook.utils.MyListener -- List size is 0
-16:01:15.859 [Test worker] INFO  com.phonebook.utils.MyListener -- ************************************************************
-16:01:16.171 [Test worker] ERROR com.phonebook.tests.TestBase -- FAILED: isHomeComponentPresentTest Screenshot path: C:\QA\QA49_PhonebookUI\screenshots\sreen-1737471676146.png
-16:01:16.171 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
-16:01:16.171 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================================================
+<pre>09:49:35.307 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test isHomeComponentPresentTest[]
+09:49:35.466 [Test worker] INFO  com.phonebook.utils.MyListener -- Before fine elements By.cssSelector: div:nth-child(2)&gt;div&gt;div&gt;h1
+09:49:35.467 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
+09:49:35.527 [Test worker] INFO  com.phonebook.utils.MyListener -- List size is 1
+09:49:35.528 [Test worker] INFO  com.phonebook.utils.MyListener -- ************************************************************
+09:49:35.614 [Test worker] INFO  com.phonebook.utils.MyListener -- Before fine elements By.cssSelector: div:nth-child(2)&gt;div&gt;div&gt;h1
+09:49:35.615 [Test worker] INFO  com.phonebook.utils.MyListener -- ***********************************************
+09:49:35.670 [Test worker] INFO  com.phonebook.utils.MyListener -- List size is 1
+09:49:35.670 [Test worker] INFO  com.phonebook.utils.MyListener -- ************************************************************
+09:49:35.704 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: isHomeComponentPresentTest
+09:49:35.705 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+09:49:35.706 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================================================
 </pre>
 </span>
 </div>
@@ -179,7 +110,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.2</a> at Jan 21, 2025, 4:01:16 PM</p>
+<a href="http://www.gradle.org">Gradle 8.2</a> at Jan 22, 2025, 9:49:36 AM</p>
 </div>
 </div>
 </body>
