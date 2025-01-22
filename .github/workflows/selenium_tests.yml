@@ -10,18 +10,19 @@ on:
 jobs:
  test:
   runs-on: ubuntu-latest
- steps:
-  - name: Checkout repository
-    uses: actions/checkout@v2
-  - name: Set up JDK
-    uses: actions/setup-java@v1
-    with:
-     java-version: '17'
+  
+  steps:
+   - name: Checkout repository
+     uses: actions/checkout@v2
+   - name: Set up JDK
+     uses: actions/setup-java@v1
+     with:
+      java-version: '17'
  
-  - name: Set up Chrome WebDriver
-    uses: robertstettner/setup-chromedriver@v2
-    with:
-     version: 'latest'
+   - name: Set up Chrome WebDriver
+     uses: robertstettner/setup-chromedriver@v2
+     with:
+      version: 'latest'
  
-  - name: Run Selenium Tests
-    run: gradle clean qa
+   - name: Run Selenium Tests
+     run: gradle clean qa
