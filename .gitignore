@@ -7,7 +7,7 @@
 *.iml
 *.ipr
 out/
-/gradle/
+#/gradle/
 settings.gradle
 #\gradlew
 #gradlew/
