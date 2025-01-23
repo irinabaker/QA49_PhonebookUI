@@ -1,4 +1,4 @@
-name: 🕷 Java CI with Gradle [UBUNTU] Selenium Tests
+name: 🕷 Java CI with Gradle Selenium Tests
 on:
   push:
     branches: [ main, master ]
