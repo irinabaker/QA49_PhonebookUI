@@ -50,4 +50,4 @@ jobs:
         with:
           name: gradle-results.zip
           path: |
-            build/reports/tests/test/*
+            build/reports/tests/qa1/*
