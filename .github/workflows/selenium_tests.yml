@@ -37,7 +37,7 @@ jobs:
       - name: ✅ Clean Gradle build
         run: ./gradlew clean
       - name: ▶️ 🕷 Run tests
-        run: ./gradlew clean qa1 -Psuite1 > build.log 2>&1 || true
+        run: xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" ./gradlew clean qa1 -Psuite1 > build.log 2>&1 || true
       - name: ✅ Archive [Gradle build log]
         uses: actions/upload-artifact@v4
         if: always()
