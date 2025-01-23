@@ -1,4 +1,4 @@
-name: 🐞 Java CI with Gradle [UBUNTU] Selenium Tests
+name: 🕷 Java CI with Gradle [UBUNTU] Selenium Tests
 on:
   push:
     branches: [ main, master ]
@@ -9,7 +9,7 @@ on:
       deployment_target:
         description: Choose target
         required: true
-        default: 'smoke'
+        default: 'Smoky'
         type: choice
         options:
           - 'Smoky'
@@ -24,27 +24,27 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - name: ❎ ⌛️ Check Java version
+      - name: ✅ Check Java version
         run: java -version
-      - name: ❎ ⌛️ Check JVM version
+      - name: ✅ Check JVM version
         run: echo $JAVA_HOME
-      - name: ❎ ⌛️ Check Java Core version
+      - name: ✅ Check Java Core version
         run: javac -version
-      - name: ✅ ⚙️ Set execute permission for gradlew
+      - name: ✅ Set execute permission for gradlew
         run: chmod +x gradlew
-      - name: ❎ ⌛️ Check Gradle version
+      - name: ✅ Check Gradle version
         run: ./gradlew --version
-      - name: ✅ 🚿 Clean Gradle build
+      - name: ✅ Clean Gradle build
         run: ./gradlew clean
-      - name: ▶️ 🐞 Run tests
-        run: xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24" ./gradlew clean qa1 -Psuite1 > build.log 2>&1 || true
-      - name: ✅ 📦 Archive [Gradle build log]
+      - name: ▶️ 🕷 Run tests
+        run: --auto-servernum --server-args="-screen 0 1920x1080x24" ./gradlew clean qa1 -Psuite1 > build.log 2>&1 || true
+      - name: ✅ Archive [Gradle build log]
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: gradle-build-log.zip
           path: build.log
-      - name: ✅ 📦 Archive [test results]
+      - name: ✅ Archive [test results]
         uses: actions/upload-artifact@v4
         if: always()
         with:
